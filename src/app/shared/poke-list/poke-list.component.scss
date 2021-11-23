@@ -4,14 +4,16 @@
 :host{
     display: flex;
     justify-content: space-between;
-    .pokemon{
+
+    .pokemon{        
         position: relative;
         display: flex;
         background: var(--branco);
-        width: 49%;
-        height: rem-calc(160);
+        width: calc(49% - 2.5rem);
+        height: rem-calc(157-40);
         padding: rem-calc(20);   
         border-radius: rem-calc(10);
+
         &__status {
             h2 {
                 font-size: rem-calc(22);
@@ -29,13 +31,10 @@
                 li {
                     background: var(--cinza);
                     font-size: rem-calc(10);
-
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
                     border-radius: rem-calc(50);
-
                     width: rem-calc(60);
                     margin-bottom: rem-calc(5);
                 }
